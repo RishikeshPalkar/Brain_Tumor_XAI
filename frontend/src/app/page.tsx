@@ -45,7 +45,7 @@ export default function HomePage() {
       <section className="text-center max-w-3xl mx-auto space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-800 text-cyan-300 text-xs font-semibold">
           <Brain className="w-3.5 h-3.5 text-cyan-400" />
-          <span>EfficientNet-B4 Deep Learning & Grad-CAM Interpretability</span>
+          <span>Custom CNN Deep Learning & Grad-CAM Interpretability</span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
           Brain Tumor Detection with <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Explainable AI</span>

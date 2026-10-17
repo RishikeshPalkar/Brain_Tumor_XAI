@@ -19,7 +19,7 @@ export default function Footer() {
 
         <div className="pt-4 border-t border-slate-900 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="text-[11px] text-slate-500">
-            Built with Next.js, Spring Boot 3, FastAPI, TensorFlow/Keras EfficientNetB4, and MySQL 8.4 LTS.
+            Built with Next.js, Spring Boot 3, FastAPI, Custom CNN (TensorFlow/Keras), and MySQL 8.4 LTS.
           </p>
           <p className="text-[11px] text-slate-500">
             Not for diagnostic use. All patient-identifying data must be de-identified prior to analysis.

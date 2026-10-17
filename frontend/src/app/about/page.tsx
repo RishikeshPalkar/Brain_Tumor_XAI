@@ -37,7 +37,7 @@ export default function AboutPage() {
           <div className="bg-slate-950/70 p-4 rounded-xl border border-slate-800 space-y-2">
             <span className="font-bold text-emerald-400 text-sm block">3. Python FastAPI AI Service</span>
             <p className="text-slate-400">
-              High-performance inference microservice with pinned TensorFlow/Keras runtime. Serves the trained EfficientNet-B4 model and generates Grad-CAM heatmaps on request.
+              High-performance inference microservice with pinned TensorFlow/Keras runtime. Serves the trained Custom CNN model and generates Grad-CAM heatmaps on request.
             </p>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function AboutPage() {
         </h2>
         <div className="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
           <p>
-            <strong>Gradient-weighted Class Activation Mapping (Grad-CAM)</strong> computes the gradients of the predicted class score with respect to the feature activation maps of the final convolutional layer (<code>top_conv</code> in EfficientNet-B4).
+            <strong>Gradient-weighted Class Activation Mapping (Grad-CAM)</strong> computes the gradients of the predicted class score with respect to the feature activation maps of the final convolutional layer (<code>last_conv</code> in the Custom CNN).
           </p>
           <p>
             These gradients are pooled across spatial dimensions to yield importance weights for each feature map. A rectified linear activation (ReLU) is then applied to isolate features that have a positive influence on the target class.
@@ -74,7 +74,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
           <div className="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
             <span className="text-[10px] text-slate-500 uppercase block font-semibold">Base Architecture</span>
-            <span className="text-sm font-bold text-slate-200">EfficientNet-B4</span>
+            <span className="text-sm font-bold text-slate-200">Custom CNN (4-Block)</span>
           </div>
           <div className="bg-slate-950/60 p-3 rounded-lg border border-slate-800">
             <span className="text-[10px] text-slate-500 uppercase block font-semibold">Input Dimensions</span>
